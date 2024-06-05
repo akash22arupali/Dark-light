@@ -9,8 +9,8 @@ import { DarkModeService } from '../services/dark-mode.service';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-darkModeService: DarkModeService =inject(DarkModeService);
-toggleDarkMode(){
-  this.darkModeService.updateDarkMode();
-}
+  darkModeService: DarkModeService = inject(DarkModeService);
+  toggleDarkMode() {
+    this.darkModeService.updateDarkMode();
+  }
 }

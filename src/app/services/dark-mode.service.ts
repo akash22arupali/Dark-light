@@ -5,10 +5,10 @@ import { Injectable, signal } from '@angular/core';
 })
 export class DarkModeService {
 
-  darkModeSignal= signal<string>('null');
+  darkModeSignal = signal<string>('null');
 
-  updateDarkMode(){
-    this.darkModeSignal.update((value)=> (value === "dark" ? "null": "dark"));
+  updateDarkMode() {
+    this.darkModeSignal.update((value) => (value === "dark" ? "null" : "dark"));
   }
   constructor() { }
 }
